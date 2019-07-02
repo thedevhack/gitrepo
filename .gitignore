@@ -1,0 +1,9 @@
+#Xcode
+## Build Generated
+build/
+DeriveData/
+
+##VariousSettings
+*.pbxuser
+xcuserdata/
+
