@@ -55,7 +55,7 @@
                                             <color key="titleColor" red="0.83529411764705885" green="0.39215686274509803" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvz-p4-a04">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvz-p4-a04" customClass="RoundedButtons" customModule="FirstApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="181.5" width="335" height="40"/>
                                         <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -66,7 +66,7 @@
                                             <color key="titleColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLM-lA-ie2">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLM-lA-ie2" customClass="RoundedButtons" customModule="FirstApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="233.5" width="335" height="40"/>
                                         <color key="backgroundColor" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -80,7 +80,7 @@
                                             <segue destination="WHm-Bs-xT9" kind="show" id="DCj-IY-pjr"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCb-Jl-mB9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCb-Jl-mB9" customClass="RoundedButtons" customModule="FirstApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="285.5" width="335" height="40"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="900" y="4.9475262368815596"/>
         </scene>
-        <!--View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="RPh-Dr-VGI">
             <objects>
-                <viewController id="WHm-Bs-xT9" sceneMemberID="viewController">
+                <viewController id="WHm-Bs-xT9" customClass="RegisterVC" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zuU-ds-WjO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,15 +174,18 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkG-gd-saN">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkG-gd-saN" customClass="RoundedButtons" customModule="FirstApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="242.5" width="335" height="35"/>
                                         <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="RegisterClicked:" destination="WHm-Bs-xT9" eventType="touchUpInside" id="cEX-7n-unO"/>
+                                        </connections>
                                     </button>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="V9w-uQ-NMr">
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="V9w-uQ-NMr">
                                         <rect key="frame" x="0.0" y="289.5" width="335" height="37"/>
                                         <color key="color" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </activityIndicatorView>
@@ -192,14 +195,14 @@
                                     <constraint firstItem="V9w-uQ-NMr" firstAttribute="centerX" secondItem="QA0-RI-f1C" secondAttribute="centerX" id="Tdl-2h-362"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-Bi-avB">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="cdX-Bi-avB">
                                 <rect key="frame" x="319" y="227.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="1yz-Fe-Dyg"/>
                                     <constraint firstAttribute="height" constant="30" id="gKx-JN-ymo"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="It2-rj-3wh">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="It2-rj-3wh">
                                 <rect key="frame" x="319" y="279.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="1MN-1P-F4u"/>
@@ -223,6 +226,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q7o-ZW-1Tu"/>
                     </view>
+                    <connections>
+                        <outlet property="activityindicator" destination="V9w-uQ-NMr" id="xbb-rp-tA3"/>
+                        <outlet property="confirmpassCheckImg" destination="It2-rj-3wh" id="7kS-Lj-G4C"/>
+                        <outlet property="confirmpasswordtxt" destination="ciY-wD-pNN" id="Tfe-jv-qDJ"/>
+                        <outlet property="emailtxt" destination="g0R-RL-hhH" id="JMv-nT-qQa"/>
+                        <outlet property="passCheckImg" destination="cdX-Bi-avB" id="PND-R2-eSD"/>
+                        <outlet property="passwordtxt" destination="A65-vt-efR" id="e5w-tX-1QY"/>
+                        <outlet property="usernametxt" destination="gjD-6f-PzV" id="mdy-cq-NQN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJe-uf-Qdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
