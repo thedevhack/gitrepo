@@ -73,8 +73,8 @@ class RegisterVC: UIViewController {
             if let error = error {
                 debugPrint(error)
             }
-            print("Successfully Registered User")
             self.activityindicator.stopAnimating()
+            self.dismiss(animated: true, completion: nil)
         }
         
         
