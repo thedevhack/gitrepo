@@ -7,28 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3BD6AE22D0983E001489A0 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BD6AD22D0983E001489A0 /* Firebase+Utils.swift */; };
+		8C67FD5322D06B5800823088 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67FD5122D06B5800823088 /* ForgotPasswordVC.swift */; };
+		8C67FD5422D06B5800823088 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C67FD5222D06B5800823088 /* ForgotPasswordVC.xib */; };
 		8C71503222CCF7410004B3E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C71503122CCF7410004B3E5 /* Constants.swift */; };
 		8C71503422CCFFEE0004B3E5 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C71503322CCFFEE0004B3E5 /* RoundedViews.swift */; };
 		8C7A13C622CC806D0021B06A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A13C522CC806D0021B06A /* LoginVC.swift */; };
 		8C7A13C822CC808B0021B06A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A13C722CC808B0021B06A /* RegisterVC.swift */; };
 		8C7A13CB22CC8D260021B06A /* Extensons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A13CA22CC8D250021B06A /* Extensons.swift */; };
+		8C7A777F22D22A2E009AD4F1 /* AddBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7A777E22D22A2E009AD4F1 /* AddBookVC.swift */; };
 		8CA3770022CA7E1C00C91ACD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA376FF22CA7E1C00C91ACD /* GoogleService-Info.plist */; };
 		8CDEDE8B22C7B803004C480B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEDE8A22C7B803004C480B /* AppDelegate.swift */; };
 		8CDEDE8D22C7B803004C480B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDEDE8C22C7B803004C480B /* HomeVC.swift */; };
 		8CDEDE9022C7B803004C480B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEDE8E22C7B803004C480B /* Main.storyboard */; };
 		8CDEDE9222C7B807004C480B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEDE9122C7B807004C480B /* Assets.xcassets */; };
 		8CDEDE9D22C7B889004C480B /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDEDE9C22C7B889004C480B /* LoginStoryBoard.storyboard */; };
-		A2E59CCC10BBC8D90F352858 /* Pods_FirstApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E72635624AD8E2518E831E9 /* Pods_FirstApp.framework */; };
+		B0489A20C187ECCE507A06D4 /* Pods_FirstApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782949B917E1115295D9C19F /* Pods_FirstApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		294BA4DF8F0BD8E73007AD74 /* Pods-FirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.release.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.release.xcconfig"; sourceTree = "<group>"; };
-		6E72635624AD8E2518E831E9 /* Pods_FirstApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A1F0054E9A652030E0222B /* Pods-FirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.debug.xcconfig"; sourceTree = "<group>"; };
+		782949B917E1115295D9C19F /* Pods_FirstApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3BD6AD22D0983E001489A0 /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		8C67FD5122D06B5800823088 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		8C67FD5222D06B5800823088 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		8C71503122CCF7410004B3E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8C71503322CCFFEE0004B3E5 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		8C7A13C522CC806D0021B06A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8C7A13C722CC808B0021B06A /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		8C7A13CA22CC8D250021B06A /* Extensons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensons.swift; sourceTree = "<group>"; };
+		8C7A777E22D22A2E009AD4F1 /* AddBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookVC.swift; sourceTree = "<group>"; };
 		8CA376FF22CA7E1C00C91ACD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CDEDE8722C7B803004C480B /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDEDE8A22C7B803004C480B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +45,7 @@
 		8CDEDE9122C7B807004C480B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CDEDE9622C7B807004C480B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CDEDE9C22C7B889004C480B /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
-		C6830F0C7FAFD5AE1907757E /* Pods-FirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A67D2AD2809CE32C73BAD534 /* Pods-FirstApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.release.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,19 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E59CCC10BBC8D90F352858 /* Pods_FirstApp.framework in Frameworks */,
+				B0489A20C187ECCE507A06D4 /* Pods_FirstApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		091CC93F78F426BF8DDD3D76 /* Frameworks */ = {
+		43222BB6BEEB2C8E4118A29E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E72635624AD8E2518E831E9 /* Pods_FirstApp.framework */,
+				8CDEDE8822C7B803004C480B /* Products */,
+				782949B917E1115295D9C19F /* Pods_FirstApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C67FD5022D06AF900823088 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				8C67FD5122D06B5800823088 /* ForgotPasswordVC.swift */,
+				8C67FD5222D06B5800823088 /* ForgotPasswordVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		8C7A13C122CC7F2D0021B06A /* Controller */ = {
@@ -67,6 +85,7 @@
 				8CDEDE8C22C7B803004C480B /* HomeVC.swift */,
 				8C7A13C522CC806D0021B06A /* LoginVC.swift */,
 				8C7A13C722CC808B0021B06A /* RegisterVC.swift */,
+				8C7A777E22D22A2E009AD4F1 /* AddBookVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -100,6 +119,7 @@
 			children = (
 				8C7A13CA22CC8D250021B06A /* Extensons.swift */,
 				8C71503122CCF7410004B3E5 /* Constants.swift */,
+				8C3BD6AD22D0983E001489A0 /* Firebase+Utils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -108,9 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				8CDEDE8922C7B803004C480B /* FirstApp */,
-				8CDEDE8822C7B803004C480B /* Products */,
 				9599B4E18286943B2FF7CB2F /* Pods */,
-				091CC93F78F426BF8DDD3D76 /* Frameworks */,
+				43222BB6BEEB2C8E4118A29E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,13 +145,13 @@
 			isa = PBXGroup;
 			children = (
 				8C7A13C922CC8CF50021B06A /* Utilities */,
+				8C67FD5022D06AF900823088 /* XIBs */,
 				8C7A13C422CC7F5D0021B06A /* Model */,
 				8C7A13C322CC7F4A0021B06A /* Storyboards */,
 				8C7A13C222CC7F3E0021B06A /* Views */,
 				8C7A13C122CC7F2D0021B06A /* Controller */,
 				8CDEDE9122C7B807004C480B /* Assets.xcassets */,
 				8CDEDE9622C7B807004C480B /* Info.plist */,
-				8CA376FF22CA7E1C00C91ACD /* GoogleService-Info.plist */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -140,8 +159,9 @@
 		9599B4E18286943B2FF7CB2F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C6830F0C7FAFD5AE1907757E /* Pods-FirstApp.debug.xcconfig */,
-				294BA4DF8F0BD8E73007AD74 /* Pods-FirstApp.release.xcconfig */,
+				8CA376FF22CA7E1C00C91ACD /* GoogleService-Info.plist */,
+				17A1F0054E9A652030E0222B /* Pods-FirstApp.debug.xcconfig */,
+				A67D2AD2809CE32C73BAD534 /* Pods-FirstApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -153,11 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CDEDE9922C7B807004C480B /* Build configuration list for PBXNativeTarget "FirstApp" */;
 			buildPhases = (
-				ADF0DCE1B9259924F97B9142 /* [CP] Check Pods Manifest.lock */,
+				A72A48AC0526DCF20EAF9EBD /* [CP] Check Pods Manifest.lock */,
 				8CDEDE8322C7B802004C480B /* Sources */,
 				8CDEDE8422C7B802004C480B /* Frameworks */,
 				8CDEDE8522C7B802004C480B /* Resources */,
-				757575B3382556E2161AB640 /* [CP] Embed Pods Frameworks */,
+				6546A13C66CDC5DE685B4296 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +228,7 @@
 			files = (
 				8CDEDE9222C7B807004C480B /* Assets.xcassets in Resources */,
 				8CA3770022CA7E1C00C91ACD /* GoogleService-Info.plist in Resources */,
+				8C67FD5422D06B5800823088 /* ForgotPasswordVC.xib in Resources */,
 				8CDEDE9022C7B803004C480B /* Main.storyboard in Resources */,
 				8CDEDE9D22C7B889004C480B /* LoginStoryBoard.storyboard in Resources */,
 			);
@@ -216,7 +237,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		757575B3382556E2161AB640 /* [CP] Embed Pods Frameworks */ = {
+		6546A13C66CDC5DE685B4296 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,7 +254,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstApp/Pods-FirstApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ADF0DCE1B9259924F97B9142 /* [CP] Check Pods Manifest.lock */ = {
+		A72A48AC0526DCF20EAF9EBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,13 +283,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3BD6AE22D0983E001489A0 /* Firebase+Utils.swift in Sources */,
 				8CDEDE8D22C7B803004C480B /* HomeVC.swift in Sources */,
 				8C7A13CB22CC8D260021B06A /* Extensons.swift in Sources */,
 				8C7A13C822CC808B0021B06A /* RegisterVC.swift in Sources */,
 				8CDEDE8B22C7B803004C480B /* AppDelegate.swift in Sources */,
 				8C71503422CCFFEE0004B3E5 /* RoundedViews.swift in Sources */,
 				8C7A13C622CC806D0021B06A /* LoginVC.swift in Sources */,
+				8C67FD5322D06B5800823088 /* ForgotPasswordVC.swift in Sources */,
 				8C71503222CCF7410004B3E5 /* Constants.swift in Sources */,
+				8C7A777F22D22A2E009AD4F1 /* AddBookVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,13 +361,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -392,24 +417,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		8CDEDE9A22C7B807004C480B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6830F0C7FAFD5AE1907757E /* Pods-FirstApp.debug.xcconfig */;
+			baseConfigurationReference = 17A1F0054E9A652030E0222B /* Pods-FirstApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWJS7GUGXJ;
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,12 +450,13 @@
 		};
 		8CDEDE9B22C7B807004C480B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 294BA4DF8F0BD8E73007AD74 /* Pods-FirstApp.release.xcconfig */;
+			baseConfigurationReference = A67D2AD2809CE32C73BAD534 /* Pods-FirstApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MWJS7GUGXJ;
 				INFOPLIST_FILE = FirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

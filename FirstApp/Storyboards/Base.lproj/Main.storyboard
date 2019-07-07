@@ -17,13 +17,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="01t-aX-k3b">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="01t-aX-k3b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CeZ-Bb-GRE"/>
+                            <constraint firstAttribute="bottom" secondItem="01t-aX-k3b" secondAttribute="bottom" id="D63-Du-q3X"/>
+                            <constraint firstItem="01t-aX-k3b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kLy-h5-4nt"/>
+                            <constraint firstItem="01t-aX-k3b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zJY-lH-WxP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="OeF-eT-SwM">
                         <barButtonItem key="leftBarButtonItem" title="Login" id="V0f-XD-OVc">
                             <connections>
                                 <action selector="LogInOutClicked:" destination="BYZ-38-t0r" id="ZNk-nv-V8F"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add Product" id="cSa-zX-U6E">
+                            <connections>
+                                <segue destination="eMP-AX-01X" kind="show" id="zu1-xT-TdK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -53,5 +69,144 @@
             </objects>
             <point key="canvasLocation" x="-209" y="132"/>
         </scene>
+        <!--Add BookVC-->
+        <scene sceneID="fa1-O4-4g3">
+            <objects>
+                <viewController id="eMP-AX-01X" customClass="AddBookVC" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gZb-Ro-Bpi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="dvn-wV-6fT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VvK-kq-T3S">
+                                <rect key="frame" x="20" y="84" width="335" height="563"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90s-Mh-vD3">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eio-VO-r1q">
+                                        <rect key="frame" x="0.0" y="32.5" width="335" height="30.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhJ-gr-siE">
+                                        <rect key="frame" x="0.0" y="73" width="335" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYI-zy-CGD">
+                                        <rect key="frame" x="0.0" y="105.5" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngf-dc-cSD">
+                                        <rect key="frame" x="0.0" y="145.5" width="335" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5w-rp-ccv">
+                                        <rect key="frame" x="0.0" y="178" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Original Price(in Rs.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWB-4X-CPA">
+                                        <rect key="frame" x="0.0" y="218" width="335" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="955-XB-hb1">
+                                        <rect key="frame" x="0.0" y="250.5" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Offer Price(in Rs.)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJY-5v-SR5">
+                                        <rect key="frame" x="0.0" y="290.5" width="335" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k5Y-id-O58">
+                                        <rect key="frame" x="0.0" y="323" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category (Sell/Lend)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXN-SO-vhV">
+                                        <rect key="frame" x="0.0" y="363" width="335" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hij-3o-DmF">
+                                        <rect key="frame" x="0.0" y="395.5" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5f-nc-7LW">
+                                        <rect key="frame" x="0.0" y="435.5" width="335" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ujj-nK-1ss">
+                                        <rect key="frame" x="0.0" y="468" width="335" height="50"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hZ-AL-TmR">
+                                        <rect key="frame" x="0.0" y="528" width="335" height="35"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="SUBMIT">
+                                            <color key="titleColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bookdetailsubmitClicked:" destination="eMP-AX-01X" eventType="touchUpInside" id="6za-Y2-5lA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pML-od-Aya" firstAttribute="trailing" secondItem="VvK-kq-T3S" secondAttribute="trailing" constant="20" id="3QZ-W7-naK"/>
+                            <constraint firstAttribute="bottom" secondItem="VvK-kq-T3S" secondAttribute="bottom" constant="20" id="9pg-hB-diM"/>
+                            <constraint firstItem="dvn-wV-6fT" firstAttribute="leading" secondItem="pML-od-Aya" secondAttribute="leading" id="DBC-NA-gO1"/>
+                            <constraint firstItem="VvK-kq-T3S" firstAttribute="leading" secondItem="pML-od-Aya" secondAttribute="leading" constant="20" id="HGa-NB-5eo"/>
+                            <constraint firstItem="VvK-kq-T3S" firstAttribute="top" secondItem="pML-od-Aya" secondAttribute="top" constant="20" id="gDo-Qw-Fvg"/>
+                            <constraint firstItem="dvn-wV-6fT" firstAttribute="trailing" secondItem="pML-od-Aya" secondAttribute="trailing" id="nMV-6G-C2P"/>
+                            <constraint firstAttribute="bottom" secondItem="dvn-wV-6fT" secondAttribute="bottom" id="uiU-1h-iUY"/>
+                            <constraint firstItem="dvn-wV-6fT" firstAttribute="top" secondItem="pML-od-Aya" secondAttribute="top" id="w63-Wi-e9X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pML-od-Aya"/>
+                    </view>
+                    <connections>
+                        <outlet property="bookImageChoose" destination="ujj-nK-1ss" id="DgR-bf-DAs"/>
+                        <outlet property="bookauthorTxt" destination="lYI-zy-CGD" id="4oB-S3-g0x"/>
+                        <outlet property="bookcategoryTxt" destination="hij-3o-DmF" id="8Yy-mv-ayw"/>
+                        <outlet property="bookconditionTxt" destination="U5w-rp-ccv" id="J1p-b5-ETw"/>
+                        <outlet property="bookofferpriceTxt" destination="k5Y-id-O58" id="ADa-xO-lSS"/>
+                        <outlet property="bookoriginalpriceTxt" destination="955-XB-hb1" id="8iq-Ud-853"/>
+                        <outlet property="booktitleTxt" destination="Eio-VO-r1q" id="C1V-FS-lcc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2EA-kd-exw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829.5999999999999" y="131.78410794602701"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="bg_cat3" width="1500" height="1875"/>
+    </resources>
 </document>

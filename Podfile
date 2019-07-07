@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'FirstApp' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -15,6 +15,6 @@ target 'FirstApp' do
   pod 'CodableFirebase' 
   pod 'Stripe'
   pod 'Alamofire'
-  pod 'CropViewController'
-
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
 end
