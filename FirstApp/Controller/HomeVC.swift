@@ -11,6 +11,8 @@ import Firebase
 
 class HomeVC: UIViewController {
     @IBOutlet weak var LogInOutButton: UIBarButtonItem!
+    
+    @IBOutlet weak var addproducbtn: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         if Auth.auth().currentUser == nil {
@@ -25,10 +27,12 @@ class HomeVC: UIViewController {
     //this will change the button title according to who is logged in if it's a annonymous or a verified user
     override func viewDidAppear(_ animated: Bool) {
         if let user = Auth.auth().currentUser , !user.isAnonymous{
+            
             LogInOutButton.title = "Logout"
+            
         }else{
             LogInOutButton.title = "Login"
-        }
+                   }
     
     }
 
@@ -58,15 +62,14 @@ class HomeVC: UIViewController {
                 debugPrint(error)
             }
         }
-        /*if let _ = Auth.auth().currentUser {
-            do {
-                //try Auth.auth().signOut()
-                PresentLoginController()
-            } catch {
-                debugPrint(error.localizedDescription)
-            }
-        }else{
-            PresentLoginController()
-        }*/
+        
+        
     }
+    @IBAction func Addproduct(_ sender: UIBarButtonItem) {
+        
+        if let user = Auth.auth().currentUser , !user.isAnonymous {
+            performSegue(withIdentifier: "addBook", sender: nil)
+        }else{
+            simpleAlert(title: "Error", msg: "Please Sign in Before")
+        }    }
 }

@@ -18,6 +18,8 @@ class AddBookVC: UIViewController {
     @IBOutlet weak var bookofferpriceTxt: UITextField!
     @IBOutlet weak var bookcategoryTxt: UITextField!
     @IBOutlet weak var bookImageChoose: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         refAddBooks = Database.database().reference().child("BooksDetails")
