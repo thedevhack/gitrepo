@@ -12,9 +12,7 @@ target 'FirstApp' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Kingfisher', '~> 4.0'
-  pod 'CodableFirebase' 
-  pod 'Stripe'
-  pod 'Alamofire'
+  pod 'CodableFirebase'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
 end

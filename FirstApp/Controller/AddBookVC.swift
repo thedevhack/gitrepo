@@ -70,8 +70,7 @@ class AddBookVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
                     }
                 guard let downloadURL = url else {return}
                 let downloadURLString = downloadURL.absoluteString
-                let BooksDetails = ["id":key,
-                                    "BooksTitle":self.booktitleTxt.text! as String ,
+                let BooksDetails = ["BooksTitle":self.booktitleTxt.text! as String ,
                                     "BooksAuthor":self.bookauthorTxt.text! as String ,
                                     "BooksCondition":self.bookconditionTxt.text! as String ,
                                     "BookOriginalPrice":self.bookoriginalpriceTxt.text! as String ,

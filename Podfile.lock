@@ -1,5 +1,4 @@
 PODS:
-  - Alamofire (4.8.2)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
@@ -122,10 +121,8 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.8.0)
-  - Stripe (15.0.1)
 
 DEPENDENCIES:
-  - Alamofire
   - CodableFirebase
   - Firebase/Analytics
   - Firebase/Auth
@@ -135,11 +132,9 @@ DEPENDENCIES:
   - Firebase/Storage
   - IQKeyboardManagerSwift
   - Kingfisher (~> 4.0)
-  - Stripe
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Alamofire
     - BoringSSL-GRPC
     - CodableFirebase
     - Firebase
@@ -161,10 +156,8 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
-    - Stripe
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
   Firebase: 5965bac23e7fcb5fa6d926ed429c9ecef8a2014e
@@ -186,8 +179,7 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
-  Stripe: 2c4d0a88817361a102886315ff452d90f65e898b
 
-PODFILE CHECKSUM: 94cfc6c7b852b21cb1f2d279d3714479d8760511
+PODFILE CHECKSUM: fe8b80c2893e418046dd7d1c43916e4f265e6150
 
 COCOAPODS: 1.7.2
