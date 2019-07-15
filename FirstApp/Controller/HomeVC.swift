@@ -42,9 +42,7 @@ class HomeVC: UIViewController,UISearchControllerDelegate {
     //this will change the button title according to who is logged in if it's a annonymous or a verified user
     override func viewDidAppear(_ animated: Bool) {
         if let user = Auth.auth().currentUser , !user.isAnonymous{
-            
             LogInOutButton.title = "Logout"
-            
         }else{
             LogInOutButton.title = "Login"
         }
