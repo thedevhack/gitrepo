@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C3BD6AE22D0983E001489A0 /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3BD6AD22D0983E001489A0 /* Firebase+Utils.swift */; };
+		8C5AABA422E2F1CB001B25F4 /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AABA322E2F1CB001B25F4 /* BookDetailsViewController.swift */; };
 		8C67FD5322D06B5800823088 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67FD5122D06B5800823088 /* ForgotPasswordVC.swift */; };
 		8C67FD5422D06B5800823088 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C67FD5222D06B5800823088 /* ForgotPasswordVC.xib */; };
 		8C71503222CCF7410004B3E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C71503122CCF7410004B3E5 /* Constants.swift */; };
@@ -31,6 +32,7 @@
 		17A1F0054E9A652030E0222B /* Pods-FirstApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstApp.debug.xcconfig"; path = "Target Support Files/Pods-FirstApp/Pods-FirstApp.debug.xcconfig"; sourceTree = "<group>"; };
 		782949B917E1115295D9C19F /* Pods_FirstApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3BD6AD22D0983E001489A0 /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		8C5AABA322E2F1CB001B25F4 /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
 		8C67FD5122D06B5800823088 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		8C67FD5222D06B5800823088 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		8C71503122CCF7410004B3E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				8C7A777E22D22A2E009AD4F1 /* AddBookVC.swift */,
 				8CE98FB122D63BAB006862E5 /* AddBooksModel.swift */,
 				8C7C625722D778E900D3D0A3 /* TableViewCell.swift */,
+				8C5AABA322E2F1CB001B25F4 /* BookDetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				8C3BD6AE22D0983E001489A0 /* Firebase+Utils.swift in Sources */,
 				8CE98FB222D63BAB006862E5 /* AddBooksModel.swift in Sources */,
+				8C5AABA422E2F1CB001B25F4 /* BookDetailsViewController.swift in Sources */,
 				8CDEDE8D22C7B803004C480B /* HomeVC.swift in Sources */,
 				8C7A13CB22CC8D260021B06A /* Extensons.swift in Sources */,
 				8C7A13C822CC808B0021B06A /* RegisterVC.swift in Sources */,

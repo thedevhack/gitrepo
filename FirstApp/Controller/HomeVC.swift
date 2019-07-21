@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Kingfisher
 
 class HomeVC: UIViewController,UISearchControllerDelegate {
     @IBOutlet weak var LogInOutButton: UIBarButtonItem!
@@ -28,6 +29,7 @@ class HomeVC: UIViewController,UISearchControllerDelegate {
             }
         }
         searchBarSetup()
+        
     }
     private func searchBarSetup() {
         searchcontroller.searchResultsUpdater = self
@@ -115,6 +117,24 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource,UISearchBarDelegat
         cell.BookShow = arrData[indexPath.row]
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "BookDetailsViewController") as? BookDetailsViewController
+        let url = URL(string: (arrData[indexPath.row].bookimageURL)!)
+        if let url = url {
+            KingfisherManager.shared.retrieveImage(with: url as Resource, options: nil, progressBlock: nil) { (image, error, cache, imageUrl) in
+                vc?.bookimgs = image!
+            }
+        }
+        vc?.booktitles = arrData[indexPath.row].booktitle!
+        vc?.bookauthors = arrData[indexPath.row].bookauthor!
+        vc?.bookconditions = arrData[indexPath.row].bookcondition!
+        vc?.bookoriginalprices = arrData[indexPath.row].bookoriginalprice!
+        vc?.bookofferprices = arrData[indexPath.row].bookofferprice!
+        vc?.bookcategorys = arrData[indexPath.row].bookcategory!
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
 }
 extension HomeVC:UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
@@ -127,7 +147,6 @@ extension HomeVC:UISearchResultsUpdating{
             arrData = arrData.filter{
                 ($0.booktitle?.contains(searchText))!
             }
-            
         }
         self.tabeView.reloadData()
     }
