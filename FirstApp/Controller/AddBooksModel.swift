@@ -18,9 +18,11 @@ class AddBooksModel {
     var bookimageURL:String?
     var bookauthor:String?
     var bookcondition:String?
+    var bookgenre:String?
+    var bookdesc:String?
     
     
-    init(booktitle:String, bookoriginalprice:String,bookofferprice:String,bookauthor:String,bookcondition:String, bookcategory:String,bookimageURL:String) {
+    init(booktitle:String, bookoriginalprice:String,bookofferprice:String,bookauthor:String,bookcondition:String, bookcategory:String,bookimageURL:String,bookgenre:String,bookdesc:String) {
         self.booktitle = booktitle
         self.bookoriginalprice = bookoriginalprice
         self.bookcategory = bookcategory
@@ -28,6 +30,8 @@ class AddBooksModel {
         self.bookofferprice = bookofferprice
         self.bookauthor = bookauthor
         self.bookcondition = bookcondition
+        self.bookgenre = bookgenre
+        self.bookdesc = bookdesc
 
     }
 }

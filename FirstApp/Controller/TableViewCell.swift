@@ -17,9 +17,9 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var lblBookOfferPrice: UILabel!
     var BookShow:AddBooksModel?{
         didSet {
-            lblBookTitle.text = BookShow?.booktitle
-            lblBookCategory.text = BookShow?.bookcategory
-            lblBookOfferPrice.text = BookShow?.bookofferprice
+            lblBookTitle.text = "Name:\(BookShow?.booktitle ?? "")"
+            lblBookCategory.text = "Author:\(BookShow?.bookauthor ?? "")"
+            lblBookOfferPrice.text = "Rs:\(BookShow?.bookofferprice ?? "")"
             let url = URL(string: (BookShow?.bookimageURL)!)
             if let url = url {
                 KingfisherManager.shared.retrieveImage(with: url as Resource, options: nil, progressBlock: nil) { (image, error, cache, imageUrl) in

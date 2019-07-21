@@ -11,15 +11,18 @@ import Firebase
 
 class AddBookVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate{
     var refAddBooks: DatabaseReference!
-    @IBOutlet weak var booktitleTxt: UITextField!
-    @IBOutlet weak var bookauthorTxt: UITextField!
-    @IBOutlet weak var bookconditionTxt: UITextField!
-    @IBOutlet weak var bookoriginalpriceTxt: UITextField!
-    @IBOutlet weak var bookofferpriceTxt: UITextField!
-    @IBOutlet weak var bookcategoryTxt: UITextField!
+    
+    
+    @IBOutlet weak var activityIndic: UIActivityIndicatorView!
+    @IBOutlet weak var booktitle: UITextField!
+    @IBOutlet weak var bookauthor: UITextField!
+    @IBOutlet weak var bookcondition: UITextField!
+    @IBOutlet weak var bookcategory: UITextField!
+    @IBOutlet weak var bookoriginalprice: UITextField!
     @IBOutlet weak var bookImageChoose: UIImageView!
-    
-    
+    @IBOutlet weak var boodesc: UITextField!
+    @IBOutlet weak var bookgenre: UITextField!
+    @IBOutlet weak var bookofferprice: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         refAddBooks = Database.database().reference().child("BooksDetails")
@@ -55,7 +58,6 @@ class AddBookVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
         dismiss(animated: true, completion: nil)
     }
     func addBooksDetails() {
-        let key = refAddBooks.childByAutoId().key
         let bookimagename = NSUUID().uuidString
         let addImage = Storage.storage().reference().child("BookImagesPics").child("\(bookimagename).png")
         if let uploadData = bookImageChoose.image?.pngData() {
@@ -70,19 +72,26 @@ class AddBookVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
                     }
                 guard let downloadURL = url else {return}
                 let downloadURLString = downloadURL.absoluteString
-                let BooksDetails = ["BooksTitle":self.booktitleTxt.text! as String ,
-                                    "BooksAuthor":self.bookauthorTxt.text! as String ,
-                                    "BooksCondition":self.bookconditionTxt.text! as String ,
-                                    "BookOriginalPrice":self.bookoriginalpriceTxt.text! as String ,
-                                    "BookOfferPrice":self.bookofferpriceTxt.text! as String ,
-                                    "BookCategory":self.bookcategoryTxt.text! as String ,
+                    
+                    let BooksDetails = ["BooksTitle":self.booktitle.text! as String ,
+                                    "BooksAuthor":self.bookauthor.text! as String ,
+                                    "BooksCondition":self.bookcondition.text! as String ,
+                                    "BookOriginalPrice":self.bookoriginalprice.text! as String ,
+                                    "BookOfferPrice":self.bookofferprice.text! as String ,
+                                    "BookCategory":self.bookcategory.text! as String ,
+                                    "BookGenre":self.bookgenre.text! as String ,
+                                    "BookDesc":self.boodesc.text! as String ,
                                     "BookImageUrl":downloadURLString
                     ]
                     self.AddBookIntoDatabase(BooksDetails: BooksDetails as [String : AnyObject])
+                
     
                 }
             }
         }
+        
+        let vc2 = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as? HomeVC
+        self.navigationController?.pushViewController(vc2!, animated: true)
     }
     func AddBookIntoDatabase(BooksDetails:[String:AnyObject]) {
     let key = refAddBooks.childByAutoId().key
@@ -90,7 +99,8 @@ class AddBookVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCo
         refAddBooks.child(key!).setValue(BooksDetails)
 }
     
-    @IBAction func submitBooksDetails(_ sender: UIButton) {
+    @IBAction func submitbookdetails(_ sender: Any) {
         addBooksDetails()
     }
+    
 }
