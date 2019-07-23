@@ -1,11 +1,10 @@
-//
+
 //  ViewController.swift
 //  FirstApp
 //
 //  Created by Ansu-Pc on 29/06/19.
 //  Copyright © 2019 Ansu-Pc. All rights reserved.
 //
-
 import UIKit
 import Firebase
 import Kingfisher
@@ -31,9 +30,27 @@ class HomeVC: UIViewController,UISearchControllerDelegate {
         searchBarSetup()
         
     }
+    func applysearch(searchText:String , scope:String = "All") {
+        if searchcontroller.searchBar.text! == ""{
+            getallFirDara()
+            arrData = arrData.filter { book in
+                let databookgenre = (scope == "All") || (book.bookgenre == scope)
+                return databookgenre
+                
+            }}else{
+            self.tabeView.reloadData()
+            arrData = arrData.filter { book in
+                let databookgenre = (scope == "All") || (book.bookgenre == scope)
+                return databookgenre && (book.booktitle?.lowercased().contains(searchText.lowercased()))!
+                
+            }
+        
+        }}
     private func searchBarSetup() {
         searchcontroller.searchResultsUpdater = self
-        searchcontroller.searchBar.delegate = self
+        searchcontroller.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        searchcontroller.searchBar.scopeButtonTitles = ["All","Study","Autobio","Story","Historical"]
         if #available(iOS 11.0, *) {
             navigationItem.searchController = searchcontroller
         } else {
@@ -148,8 +165,11 @@ extension HomeVC : UITableViewDelegate, UITableViewDataSource,UISearchBarDelegat
 }
 extension HomeVC:UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
+        let searchbars = searchController.searchBar
+        let selectedscope = searchbars.scopeButtonTitles![searchbars.selectedScopeButtonIndex]
+        applysearch(searchText: searchcontroller.searchBar.text!, scope: selectedscope)
         //later
-        guard let searchText = searchcontroller.searchBar.text else {return}
+        /*guard let searchText = searchcontroller.searchBar.text else {return}
         if searchText == "" {
             getallFirDara()
         }else{
@@ -157,8 +177,10 @@ extension HomeVC:UISearchResultsUpdating{
             arrData = arrData.filter{
                 ($0.booktitle?.contains(searchText))!
             }
-        }
+        }*/
         self.tabeView.reloadData()
     }
-
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        applysearch(searchText: searchcontroller.searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+    }
 }
