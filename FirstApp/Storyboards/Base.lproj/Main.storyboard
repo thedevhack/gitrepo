@@ -240,7 +240,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="h21-K0-nWx" secondAttribute="trailing" constant="20" id="0UJ-BW-rPq"/>
                                             <constraint firstItem="Kxu-bs-kNs" firstAttribute="leading" secondItem="Piv-Ou-QhB" secondAttribute="leading" constant="20" id="1f5-Ur-y3a"/>
@@ -476,7 +476,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="W6L-Z1-y0y" firstAttribute="top" secondItem="dZq-75-4gz" secondAttribute="top" constant="20" id="3TL-vC-ie2"/>
                                             <constraint firstItem="W6L-Z1-y0y" firstAttribute="leading" secondItem="dZq-75-4gz" secondAttribute="leading" constant="10" id="Vr6-IK-JJy"/>
